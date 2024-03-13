@@ -248,7 +248,7 @@ body {
 }
 
 .body-medium {
-  font-size: var(--fs-body-medium);
+  font-size: var(--fs-body-large);
   line-height: var(--lh-body-medium);
   font-weight: var(--weight-regular);
 }
@@ -562,12 +562,12 @@ body {
 .navbar-wrapper {
   display: grid;
   gap: 8px;
-  color: black;
+
 }
 
 .navbar-link,
 .btn-link {
-  color: black;
+  color: white;
   padding: 6px 12px;
   transition: var(--transition-duration-quick) var(--transition-easing-quick);
 }
@@ -579,7 +579,7 @@ body {
 
 :is(.navbar-link, .btn-link):is(:hover, :focus-visible),
 .navbar-link.active {
-  color: var(--primary-100);
+  color: white;
 }
 
 .navbar .btn {
@@ -595,20 +595,26 @@ body {
 }
 
 .hero {
-  position: relative;
-  color: var(--neutral-90);
-  padding-block: 130px 60px;
-  overflow: hidden;
-  isolation: isolate;
-  object-fit: cover;
+  background-image: url("../images/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(15, 0%, 40%, 0.7);
+  background-blend-mode: overlay;
+  display: grid;
+  place-items: center;
+  min-height: 600px;
+  text-align: center;
+  padding-top: 125px;
 }
 
 .hero-title {
-  color: var(--neutral-100);
+  color: white;
 }
 
 .hero-text {
   margin-block: 16px 32px;
+  color: #fff;
 }
 
 .search-bar {
